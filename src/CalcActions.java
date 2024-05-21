@@ -8,7 +8,7 @@ public abstract class CalcActions {
     public static int Umn(int a, int b){
         return a * b;
     }
-    public static double Del(double a, double b){
+    public static int Del(int a, int b){
         return a / b;
     }
 }
