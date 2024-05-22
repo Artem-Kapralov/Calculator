@@ -18,19 +18,19 @@ public class Main {
 
             if (system.equals("2")) {
                 int result = Calc.Vichislenie(Translations.DvToDes(number1), deistv, Translations.DvToDes(number2));
-                System.out.print("Ответ в двоичной системе счисления: " + Translations.DesToDv(result));
+                CalcPrint.calcPrint(result);
             }
             else if (system.equals("8")) {
                 int result = Calc.Vichislenie(Translations.VsmToDes(number1), deistv, Translations.VsmToDes(number2));
-                System.out.print("Ответ в восьмеричной системе счисления: " + Translations.DesToVsm(result));
+                CalcPrint.calcPrint(result);
             }
             else if (system.equals("10")) {
                 int result = Calc.Vichislenie(Integer.parseInt(number1), deistv, Integer.parseInt(number2));
-                System.out.print("Ответ в десятичной системе счисления: " + result);
+                CalcPrint.calcPrint(result);
             }
             else if (system.equals("16")) {
                 int result = Calc.Vichislenie(Translations.ShesToDes(number1), deistv, Translations.ShesToDes(number2));
-                System.out.print("Ответ в шестнадцатеричной системе счисления: " + Translations.DesToShes(result));
+                CalcPrint.calcPrint(result);
             }
             else throw new Exception("Некорректная система исчисления!");
         } catch (Exception e) {
