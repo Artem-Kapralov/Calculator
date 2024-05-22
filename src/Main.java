@@ -17,11 +17,11 @@ public class Main {
 
 
             if (system.equals("2")) {
-                int result = Calc.Vichislenie(Translations.DvToDes(number1), deistv, Translations.DvToDes(number2));
+                int result = Calc.Vichislenie(Translations.dvToDes(number1), deistv, Translations.dvToDes(number2));
                 CalcPrint.calcPrint(result);
             }
             else if (system.equals("8")) {
-                int result = Calc.Vichislenie(Translations.VsmToDes(number1), deistv, Translations.VsmToDes(number2));
+                int result = Calc.Vichislenie(Translations.vsmToDes(number1), deistv, Translations.vsmToDes(number2));
                 CalcPrint.calcPrint(result);
             }
             else if (system.equals("10")) {
@@ -29,7 +29,7 @@ public class Main {
                 CalcPrint.calcPrint(result);
             }
             else if (system.equals("16")) {
-                int result = Calc.Vichislenie(Translations.ShesToDes(number1), deistv, Translations.ShesToDes(number2));
+                int result = Calc.Vichislenie(Translations.shesToDes(number1), deistv, Translations.shesToDes(number2));
                 CalcPrint.calcPrint(result);
             }
             else throw new Exception("Некорректная система исчисления!");
